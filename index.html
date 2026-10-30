@@ -4,174 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        flex-direction: column;
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.35s;
+      }
+      img.loaded {
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
-    <img class="lazy-img" data-src="./public/1.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/2.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/3.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/4.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/5.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/6.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/7.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/8.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/9.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/10.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/11.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/12.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/13.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/14.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/15.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/16.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/17.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/18.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/19.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/20.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/21.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/22.jpg" alt="" loading="lazy" />
-    <img class="lazy-img" data-src="./public/23.jpg" alt="" loading="lazy" />
+    <img src="./public/0.webp" width="1920" height="1080" alt="" onload="this.classList.add('loaded')" />
+    <img src="./public/1.webp" width="1920" height="1080" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/2.webp" width="1920" height="2160" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/3.webp" width="1920" height="7441" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/4.webp" width="1920" height="1501" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/5.webp" width="1920" height="7163" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/6.webp" width="1920" height="3832" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/7.webp" width="1920" height="6503" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/8.webp" width="1920" height="1076" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/9.webp" width="1920" height="1224" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/10.webp" width="1920" height="5245" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/11.webp" width="1920" height="1080" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/12.webp" width="1920" height="3240" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/13.webp" width="1920" height="1080" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/14.webp" width="1920" height="7321" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/15.webp" width="1920" height="4320" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/16.webp" width="1920" height="3726" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/17.webp" width="1920" height="6611" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/18.webp" width="1920" height="1080" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/19.webp" width="1920" height="3097" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/20.webp" width="1920" height="4416" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/21.webp" width="1920" height="5307" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/22.webp" width="1920" height="4320" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/23.webp" width="1920" height="4467" alt="" loading="lazy" onload="this.classList.add('loaded')" />
+    <img src="./public/end.webp" width="1920" height="1080" alt="" loading="lazy" onload="this.classList.add('loaded')" />
   </body>
 </html>
-
-<style>
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    flex-direction: column;
-    margin: 0;
-  }
-  img {
-    max-width: 100%;
-    object-fit: cover;
-  }
-  .lazy-img {
-    opacity: 0;
-    transition: opacity 0.35s;
-  }
-  .lazy-img.loaded {
-    opacity: 1;
-  }
-</style>
-
-<script>
-  (function () {
-    // 圖片懶加載功能
-    const lazyImages = document.querySelectorAll(".lazy-img[data-src]");
-    let firstScreenLoaded = false;
-    let preloadTimer = null;
-
-    // 載入單張圖片
-    function loadImage(img) {
-      const src = img.getAttribute("data-src");
-      if (!src || img.src === src) return;
-
-      const imageLoader = new Image();
-      imageLoader.onload = function () {
-        img.src = src;
-        img.classList.add("loaded");
-        img.removeAttribute("data-src");
-      };
-      imageLoader.onerror = function () {
-        console.error("圖片載入失敗:", src);
-      };
-      imageLoader.src = src;
-    }
-
-    // 檢查第一屏是否載入完成
-    function checkFirstScreenLoaded() {
-      if (firstScreenLoaded) return;
-
-      const firstScreenHeight = window.innerHeight;
-      const firstScreenImages = Array.from(lazyImages).filter((img) => {
-        const rect = img.getBoundingClientRect();
-        return rect.top < firstScreenHeight && rect.top >= 0;
-      });
-
-      // 檢查第一屏的圖片是否都已載入
-      const allFirstScreenLoaded = firstScreenImages.every(
-        (img) =>
-          img.classList.contains("loaded") || !img.hasAttribute("data-src"),
-      );
-
-      if (allFirstScreenLoaded && firstScreenImages.length > 0) {
-        firstScreenLoaded = true;
-        // 第一屏載入完成後，開始預載入後續圖片
-        preloadRemainingImages();
-      }
-    }
-
-    // 預載入剩餘圖片
-    function preloadRemainingImages() {
-      const remainingImages = Array.from(lazyImages).filter((img) =>
-        img.hasAttribute("data-src"),
-      );
-
-      if (remainingImages.length === 0) return;
-
-      // 使用 requestIdleCallback 在瀏覽器空閒時預載入
-      // 如果瀏覽器不支持，則使用 setTimeout
-      const preloadNext = function () {
-        if (remainingImages.length === 0) return;
-
-        const img = remainingImages.shift();
-        loadImage(img);
-
-        // 間隔載入，避免阻塞主線程
-        if (remainingImages.length > 0) {
-          if (window.requestIdleCallback) {
-            requestIdleCallback(preloadNext, { timeout: 2000 });
-          } else {
-            setTimeout(preloadNext, 100);
-          }
-        }
-      };
-
-      if (window.requestIdleCallback) {
-        requestIdleCallback(preloadNext, { timeout: 2000 });
-      } else {
-        setTimeout(preloadNext, 500);
-      }
-    }
-
-    // Intersection Observer 用於懶加載
-    const imageObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const img = entry.target;
-            loadImage(img);
-            observer.unobserve(img);
-            // 檢查第一屏是否載入完成
-            checkFirstScreenLoaded();
-          }
-        });
-      },
-      {
-        rootMargin: "50px", // 提前 50px 開始載入
-      },
-    );
-
-    // 觀察所有圖片
-    lazyImages.forEach((img) => {
-      imageObserver.observe(img);
-    });
-
-    // 監聽頁面載入完成事件
-    window.addEventListener("load", function () {
-      // 延遲檢查，確保第一屏圖片有時間載入
-      setTimeout(checkFirstScreenLoaded, 100);
-    });
-
-    // 監聽滾動事件，檢查第一屏載入狀態
-    let scrollTimer = null;
-    window.addEventListener(
-      "scroll",
-      function () {
-        if (scrollTimer) clearTimeout(scrollTimer);
-        scrollTimer = setTimeout(checkFirstScreenLoaded, 100);
-      },
-      { passive: true },
-    );
-  })();
-</script>
